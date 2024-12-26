@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    /* padding: 10px; */
+    justify-content: center;
+    display: flex;   
+    justify-content: space-around;
+}
+header a{
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  margin-top: 20px;
+  margin: 9px;
+}
+#main{
+    padding: 20px;
+}
+#main a:hover{
+  font-weight: bolder;
+}
+.main_two {
+    font-size: 18px;
+    margin: 20px;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+    
+    width: 600px;
+    height: 400px;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;  
+    animation: slider 8s infinite linear;
+}
+
+.slide:nth-child(1) {
+    background-image: url(./baseball.jpg);
+    animation-delay: 0;
+  }
+  .slide:nth-child(2) {
+    background-image: url(./baseballpark.jpeg);
+    animation-delay: -2s;
+  }
+  .slide:nth-child(3) {
+    background-image: url(./야구사진\ 3.jpg);
+    animation-delay: -4s;
+  }
+  .slide:nth-child(4) {
+    background-image: url(./야구사진4.jpg);
+    animation-delay: -6s;
+}
+
+@keyframes slider {
+    0% {
+      transform: translateX(0);
+    }
+  
+    20% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    95% {
+      transform: translateX(100%);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+.main_slider{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer{
+    display: flex;
+    align-items: center;
+}
+
+.footer_page{
+  justify-content: space-around;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+}
+
+/*#3 */
+button {
+ /* button 요소에 기본적으로 설정되는 스타일 속성 초기화 */
+ border: none;
+ outline: none;
+ background-color: transparent;
+ padding: 0;
+ cursor: pointer;
+}
+
+.wrapper {
+  width: 450px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.wrapper .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.wrapper .nav .current-date {
+  font-size: 24px;
+  font-weight: 600;
+}
+.wrapper .nav button {
+  width: 38px;
+  height: 38px;
+  font-size: 30px;
+  color: #878787;
+}
+
+.calendar ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.calendar .weeks li {
+  font-weight: 500;
+}
+.calendar .days {
+  margin-bottom: 20px;
+}
+
+.calendar ul li {
+  width: calc(100% / 7);
+  position: relative;
+}
+
+.calendar .days li {
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.days li.inactive {
+  color: #aaa;
+}
+.days li.active {
+  color: #fff;
+}
+.calendar .days li::before {
+  position: absolute;
+  content: '';
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+}
+.days li:hover::before {
+  background: #f2f2f2;
+}
+
+#wrapper_box{
+  display: flex;
+  justify-content: center;
+}
+#modal{
+  display:none;
+}
+.modal-btn{
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer; 
+  border-radius: 4px; 
+}
+.dialog {
+  display:none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.dialog>.tb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.dialog>.tb .inner {
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 16px;
+}
+
+.dialog .top {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.dialog .title {
+  font-weight: bold;
+  font-size: 20px;
+}
+.dialog .ct {
+  max-height: 40vh;
+  height: 40vh;
+  overflow-y: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #fff;
+}
+
+input[id="modal"]:checked + label + .dialog{
+    display: block;
+}
+.close{
+  font-size:25px;
+  cursor:pointer;
+}
+#li{
+  margin-top: 20px;
+}
+.wrapper h1{
+  display: flex;
+  justify-content: center;
+  color:  rgb(248, 193, 193);
+}
+#game_see img{
+  height: 150px;
+  float: left;
+}
+#game_see{
+  background-color: rgb(11, 33, 78);
+  color: white;
+  width: 800px;
+  height: 250px;
+}
+#main_game_see{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#game_see2{
+  background-color: rgb(18, 56, 121);
+  width:  600px;
+  color: white;
+}
+#game_see2 h1{
+  text-align: right;
+}
+#game_see2 img{
+  height: 150px;
+  float: right;
+}
+#main_game_see:hover{
+  cursor: pointer;
+}
+.main_num{
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+#main_game_see:hover .main_num {
+  opacity: 1;
+  transition: 3s;
+} 
+.main_text .main_text2{
+  display: none;
+}
+.main_text:hover .main_text2{
+  display: block;
+}
+#text:hover{
+  cursor: pointer;
+}
+#league input{
+  display: none;
+}
+#league-1-1 > input +label{
+  display: none;
+}
+#league-1-1 > input +label+p{
+  display: none;
+}
+#league-1:checked+label +div>div>input+label{
+  display: block;
+}
+#league-1:checked+label +div>div>#league-1-1>input+label{
+  display: block;
+}
+#checkbox-1-pitcher:checked +label +p{
+  display: block;
+}
+#checkbox-1-hitter + label{
+  display: none;
+}
+#checkbox-1-hitter +label + p{
+  display: none;
+}
+#league-1:checked +label+div>div>div>input+label{
+  display: block;
+}
+#checkbox-1-hitter:checked +label + p{
+  display: block;
+}
+#league-1 + label +div >div{
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+#league-1 + label > h2{
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+#league-1:checked p,label,div{
+  display: block;
+}
+
+#week-league input{
+  display: none;
+}
+#week-league-1-1 > input +label{
+  display: none;
+}
+#week-league-1-1 > input +label+p{
+  display: none;
+}
+#week-league-1:checked+label +div>div>input+label{
+  display: block;
+}
+#week-league-1:checked+label +div>div>#week-league-1-1>input+label{
+  display: block;
+}
+#checkbox-2-pitcher:checked +label +p{
+  display: block;
+}
+#checkbox-2-hitter + label{
+  display: none;
+}
+#checkbox-2-hitter +label + p{
+  display: none;
+}
+#week-league-1:checked +label+div>div>div>input+label{
+  display: block;
+}
+#checkbox-2-hitter:checked +label + p{
+  display: block;
+}
+#week-league-1 + label +div >div{
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+#week-league-1 + label > h2{
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+#week-league-1:checked p,label,div{
+  display: block;
+}
+#ranking{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  justify-content: space-around;
+}
+
+#night-league input{
+  display: none;
+}
+#night-league-1-1 > input +label{
+  display: none;
+}
+#night-league-1-1 > input +label+p{
+  display: none;
+}
+#night-league-1:checked+label +div>div>input+label{
+  display: block;
+}
+#night-league-1:checked+label +div>div>#week-league-1-1>input+label{
+  display: block;
+}
+#checkbox-3-pitcher:checked +label +p{
+  display: block;
+}
+#checkbox-3-hitter + label{
+  display: none;
+}
+#checkbox-3-hitter +label + p{
+  display: none;
+}
+#night-league-1:checked +label+div>div>div>input+label{
+  display: block;
+}
+#checkbox-3-hitter:checked +label + p{
+  display: block;
+}
+#night-league-1 + label +div >div{
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+}
+#night-league-1 + label > h2{
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+#night-league-1:checked p,label,div{
+  display: block;
+}
+
+#taul input{
+  display: none;
+}
+#taul-2 >p{
+  opacity: 0;
+}
+#taul-1:checked+label+div>div>p{
+  opacity: 1;
+}
+#Top{
+  display: flex;
+  justify-content: center;
+  margin-top: 110px;
+  margin-bottom: 50px;
+}
+
+#homerun input{
+  display: none;
+}
+#homerun-2 >p{
+  opacity: 0;
+}
+#homerun-1:checked+label+div>div>p{
+  opacity: 1;
+}
+#h2{
+  text-align: center;
+}
+#winner input{
+  display: none;
+}
+#winner-2 >p{
+  opacity: 0;
+}
+#winner-1:checked+label+div>div>p{
+  opacity: 1;
+}
+#EAR input{
+  display: none;
+}
+#EAR-2 >p{
+  opacity: 0;
+}
+#EAR-1:checked+label+div>div>p{
+  opacity: 1;
+}
+#tal input{
+  display: none;
+}
+#tal-2 >p{
+  opacity: 0;
+}
+#tal-1:checked+label+div>div>p{
+  opacity: 1;
+}
+#save input{
+  display: none;
+}
+#save-2 >p{
+  opacity: 0;
+}
+#save-1:checked+label+div>div>p{
+  opacity: 1;
+}
+#EAR-2 p{
+  transition: 1s;
+}
+#tal-2 p{
+  transition: 1s;
+}
+#save-2 p{
+  transition: 1s;
+}
+#homerun-2 p{
+  transition: 1s;
+}
+#winner-2 p{
+  transition: 1s;
+}
+#taul-2 p{
+  transition: 1s;
+}
